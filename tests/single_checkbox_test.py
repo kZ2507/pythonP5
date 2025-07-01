@@ -1,4 +1,5 @@
-from selenium.common import NoSuchElementException
+from selenium.common import TimeoutException
+
 from pages.single_checkbox_page import SingleCheckboxPage
 import allure
 
@@ -27,5 +28,5 @@ def test_checkbox_not_click(browser):
     try:
         checkbox_page.find_result()
         assert False
-    except NoSuchElementException:
+    except TimeoutException:
         assert True
