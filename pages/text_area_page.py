@@ -2,7 +2,7 @@ from pages.base_page import BasePage
 from locators.text_area_locs import *
 import allure
 
-class TestAreaPage(BasePage):
+class TextAreaPage(BasePage):
     def __init__(self, browser):
         super().__init__(browser)
 

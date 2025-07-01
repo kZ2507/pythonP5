@@ -1,3 +1,3 @@
 from selenium.webdriver.common.by import By
 
-alert = (By.XPATH, "//a[contains(@onclick, 'alert')]")
+alert_selector = (By.XPATH, "//a[contains(@onclick, 'alert')]")

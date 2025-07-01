@@ -12,7 +12,7 @@ class AlertPage(BasePage):
         self.browser.get('https://www.qa-practice.com/elements/alert/alert')
 
     def find_alert(self):
-        return self.find(alert)
+        return self.find(alert_selector)
 
     def alert_click(self):
         self.find_alert().click()
