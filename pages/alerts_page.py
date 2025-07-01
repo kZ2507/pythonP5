@@ -9,8 +9,7 @@ class AlertPage(BasePage):
         super().__init__(browser)
 
     def open_page(self):
-        with allure.step('Open page'):
-            self.browser.get('https://www.qa-practice.com/elements/alert/alert')
+        self.browser.get('https://www.qa-practice.com/elements/alert/alert')
 
     def find_alert(self):
         return self.find(alert)

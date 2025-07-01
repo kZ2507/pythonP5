@@ -1,8 +1,6 @@
 from pages.text_input_page import TextInputPage
 import allure
 
-from conftest import browser
-
 @allure.feature('Text Input Page')
 @allure.title('Text Input is displayed')
 def test_field_exist(browser):
